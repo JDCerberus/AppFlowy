@@ -36,6 +36,7 @@
     "loginButtonText": "Ingresar",
     "loginStartWithAnonymous": "Comience una sesión anónima",
     "continueAnonymousUser": "Continuar con una sesión anónima",
+    "anonymous": "Anónimo",
     "buttonText": "Ingresar",
     "signingInText": "Iniciando sesión...",
     "forgotPassword": "¿Olvidó su contraseña?",
@@ -50,6 +51,8 @@
     "signInWithGoogle": "Iniciar sesión con Google",
     "signInWithGithub": "Iniciar sesión con Github",
     "signInWithDiscord": "Iniciar sesión con Discord",
+    "signInWithApple": "Continuar con Apple",
+    "continueAnotherWay": "Continuar por otro medio",
     "signUpWithGoogle": "Registrarse con Google",
     "signUpWithGithub": "Registrarse con Github",
     "signUpWithDiscord": "Registrarse con Discord",
@@ -64,12 +67,14 @@
     "alreadyHaveAnAccount": "¿Ya tienes cuenta?",
     "logIn": "Iniciar sesión",
     "generalError": "Algo ha salido mal. Por favor, inténtalo más tarde",
-    "limitRateError": "Por razones de seguridad, solo puedes solicitar un enlace mágico cada 60 segundos"
+    "limitRateError": "Por razones de seguridad, solo puedes solicitar un enlace mágico cada 60 segundos",
+    "magicLinkSentDescription": "Se envió un enlace mágico a su correo electrónico. Haga clic en el enlace para completar su inicio de sesión. El enlace expirará después de 5 minutos."
   },
   "workspace": {
     "chooseWorkspace": "Elige tu espacio de trabajo",
     "create": "Crear espacio de trabajo",
     "reset": "Restablecer espacio de trabajo",
+    "renameWorkspace": "Renombrar espacio de trabajo",
     "resetWorkspacePrompt": "Al restablecer el espacio de trabajo se eliminarán todas las páginas y datos que contiene. ¿Está seguro de que desea restablecer el espacio de trabajo? Alternativamente, puede comunicarse con el equipo de soporte para restaurar el espacio de trabajo.",
     "hint": "Espacio de trabajo",
     "notFoundError": "Espacio de trabajo no encontrado",
@@ -105,7 +110,16 @@
     "html": "HTML",
     "clipboard": "Copiar al portapapeles",
     "csv": "CSV",
-    "copyLink": "Copiar enlace"
+    "copyLink": "Copiar enlace",
+    "publishToTheWeb": "Publicar en la Web",
+    "publishToTheWebHint": "Crea un sitio web con AppFlowy",
+    "publish": "Publicar",
+    "unPublish": "Anular publicación",
+    "visitSite": "Visita el sitio",
+    "exportAsTab": "Exportar como",
+    "publishTab": "Publicar",
+    "shareTab": "Compartir",
+    "publishOnAppFlowy": "Publicar en AppFlowy"
   },
   "moreAction": {
     "small": "pequeño",
@@ -136,7 +150,9 @@
     "openNewTab": "Abrir en una pestaña nueva",
     "moveTo": "Mover a",
     "addToFavorites": "Añadira los favoritos",
-    "copyLink": "Copiar Enlace"
+    "copyLink": "Copiar Enlace",
+    "changeIcon": "Cambiar icono",
+    "collapseAllPages": "Contraer todas las subpáginas"
   },
   "blankPageTitle": "Página en blanco",
   "newPageText": "Nueva página",
@@ -146,6 +162,9 @@
   "newBoardText": "Nuevo tablero",
   "chat": {
     "newChat": "Chat de IA",
+    "inputMessageHint": "Pregunte a la IA @:appName",
+    "inputLocalAIMessageHint": "Pregunte a la IA local @:appName",
+    "unsupportedCloudPrompt": "Esta función solo está disponible cuando se utiliza @:appName Cloud",
     "relatedQuestion": "Relacionado",
     "serverUnavailable": "Servicio temporalmente no disponible. Por favor, inténtelo de nuevo más tarde.",
     "aiServerUnavailable": "🌈 ¡Uh-oh! 🌈. Un unicornio se comió nuestra respuesta. ¡Por favor, intenta de nuevo!",
@@ -154,7 +173,18 @@
     "question1": "Cómo utilizar Kanban para gestionar tareas",
     "question2": "Explica el método GTD",
     "question3": "¿Por qué usar Rust?",
-    "aiMistakePrompt": "La IA puede cometer errores. Consulta información importante."
+    "question4": "Crea una receta con lo que hay en mi cocina",
+    "aiMistakePrompt": "La IA puede cometer errores. Consulta información importante.",
+    "chatWithFilePrompt": "¿Quieres chatear con el archivo?",
+    "indexFileSuccess": "Indexando archivo exitosamente",
+    "inputActionNoPages": "No hay resultados de página",
+    "referenceSource": "{} fuente encontrada",
+    "referenceSources": "{} fuentes encontradas",
+    "clickToMention": "Haga clic para mencionar una página",
+    "uploadFile": "Sube archivos PDF, MD o TXT para chatear",
+    "questionTitle": "Ideas",
+    "questionDetail": "Hola {}! ¿En qué puedo ayudarte hoy?",
+    "indexingFile": "Indexación {}"
   },
   "trash": {
     "text": "Papelera",
@@ -255,12 +285,36 @@
     "today": "Hoy",
     "thisWeek": "Esta semana",
     "others": "Otros favoritos",
+    "earlier": "Más temprano",
     "justNow": "En este momento",
+    "minutesAgo": "Hace {count} minutos",
     "lastViewed": "Visto por última vez",
+    "favoriteAt": "Agregado a favoritos",
     "emptyRecent": "Sin documentos recientes",
+    "emptyRecentDescription": "A medida que visualiza las páginas, aparecerán aquí para facilitar su recuperación.",
+    "emptyFavorite": "No hay páginas favoritas",
+    "emptyFavoriteDescription": "Marca las páginas como favoritas: ¡aparecerán aquí para un acceso rápido!",
+    "removePageFromRecent": "¿Eliminar esta página de Recientes?",
+    "removeSuccess": "Eliminado exitosamente",
     "favoriteSpace": "Favoritos",
     "RecentSpace": "Reciente",
-    "Spaces": "Espacios"
+    "Spaces": "Espacios",
+    "upgradeToPro": "Actualizar a Pro",
+    "upgradeToAIMax": "Desbloquea IA ilimitada",
+    "storageLimitDialogTitle": "Se te ha acabado el almacenamiento gratuito. Actualiza para desbloquear almacenamiento ilimitado",
+    "storageLimitDialogTitleIOS": "Se ha quedado sin almacenamiento gratuito.",
+    "aiResponseLimitTitle": "Se te han acabado las respuestas de IA gratuitas. Actualiza al plan Pro o compra un complemento de IA para desbloquear respuestas ilimitadas",
+    "aiResponseLimitTitleIOS": "Se ha quedado sin respuestas de IA gratuitas.",
+    "aiResponseLimitDialogTitle": "Se alcanzó el límite de respuestas de IA",
+    "askOwnerToUpgradeToPro": "Tu espacio de trabajo se está quedando sin espacio de almacenamiento gratuito. Pídele al propietario de tu espacio de trabajo que actualice al plan Pro",
+    "askOwnerToUpgradeToProIOS": "Tu espacio de trabajo se está quedando sin almacenamiento libre.",
+    "askOwnerToUpgradeToAIMax": "Tu espacio de trabajo se está quedando sin respuestas de IA gratuitas. Pídele al propietario de tu espacio de trabajo que actualice el plan o compre complementos de IA",
+    "askOwnerToUpgradeToAIMaxIOS": "Tu espacio de trabajo se está quedando sin respuestas de IA gratuitas.",
+    "purchaseStorageSpace": "Comprar espacio de almacenamiento",
+    "purchaseAIResponse": "Comprar",
+    "askOwnerToUpgradeToLocalAI": "Solicitar al propietario del espacio de trabajo que habilite la IA en el dispositivo",
+    "upgradeToAILocal": "Ejecute modelos locales en su dispositivo para obtener la máxima privacidad",
+    "upgradeToAILocalDesc": "Chatea con archivos PDF, mejora tu escritura y completa tablas automáticamente usando IA local"
   },
   "notifications": {
     "export": {
@@ -301,10 +355,12 @@
     "removeFromFavorites": "Quitar de favoritos",
     "removeFromRecent": "Eliminar de los recientes",
     "addToFavorites": "Añadir a favoritos",
+    "duplicateSuccessfully": "Duplicado exitosamente",
     "rename": "Renombrar",
     "helpCenter": "Centro de ayuda",
     "add": "Añadir",
     "yes": "Si",
+    "no": "No",
     "clear": "Limpiar",
     "remove": "Eliminar",
     "dontRemove": "no quitar",
@@ -319,7 +375,12 @@
     "signInDiscord": "Iniciar sesión con discordia",
     "more": "Más",
     "create": "Crear",
-    "close": "Cerca"
+    "close": "Cerca",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Entregar",
+    "download": "Descargar",
+    "backToHome": "Volver a Inicio"
   },
   "label": {
     "welcome": "¡Bienvenido!",
@@ -343,6 +404,12 @@
   },
   "settings": {
     "title": "Ajustes",
+    "popupMenuItem": {
+      "settings": "Ajustes",
+      "members": "Miembros",
+      "trash": "Basura",
+      "helpAndSupport": "Ayuda y soporte"
+    },
     "accountPage": {
       "menuLabel": "Mi cuenta",
       "title": "Mi cuenta",
@@ -362,6 +429,289 @@
         "logoutLabel": "Cerrar sesión"
       },
       "description": "Personaliza tu perfil, administra la seguridad de la cuenta y las claves API de IA, o inicia sesión en tu cuenta."
+    },
+    "workspacePage": {
+      "menuLabel": "Espacio de trabajo",
+      "title": "Espacio de trabajo",
+      "description": "Personalice la apariencia de su espacio de trabajo, el tema, la fuente, el diseño del texto, el formato de fecha/hora y el idioma.",
+      "workspaceName": {
+        "title": "Nombre del espacio de trabajo"
+      },
+      "workspaceIcon": {
+        "title": "Icono del espacio de trabajo",
+        "description": "Sube una imagen o usa un emoji para tu espacio de trabajo. El ícono aparecerá en la barra lateral y en las notificaciones."
+      },
+      "appearance": {
+        "title": "Apariencia",
+        "description": "Personalice la apariencia de su espacio de trabajo, el tema, la fuente, el diseño del texto, la fecha, la hora y el idioma.",
+        "options": {
+          "system": "Automático ",
+          "light": "Claro",
+          "dark": "Oscuro"
+        }
+      },
+      "resetCursorColor": {
+        "title": "Restablecer el color del cursor del documento",
+        "description": "¿Está seguro de que desea restablecer el color del cursor?"
+      },
+      "resetSelectionColor": {
+        "description": "¿Estás seguro de que deseas restablecer el color de selección?"
+      },
+      "theme": {
+        "title": "Tema",
+        "description": "Seleccione un tema prestablecido o cargue su propio tema personalizado.",
+        "uploadCustomThemeTooltip": "Subir un tema personalizado"
+      },
+      "workspaceFont": {
+        "title": "Fuente del espacio de trabajo",
+        "noFontHint": "No se encontró ninguna fuente, pruebe con otro término."
+      },
+      "textDirection": {
+        "title": "Dirección del texto",
+        "leftToRight": "De izquierda a derecha",
+        "rightToLeft": "De derecha a izquierda",
+        "auto": "Automático ",
+        "enableRTLItems": "Habilitar elementos de la barra de herramientas RTL"
+      },
+      "layoutDirection": {
+        "leftToRight": "De izquierda a derecha",
+        "rightToLeft": "De derecha a izquierda"
+      },
+      "dateTime": {
+        "title": "Fecha y hora",
+        "example": "{} en {} ({})",
+        "24HourTime": "Tiempo de 24 horas",
+        "dateFormat": {
+          "label": "Formato de fecha",
+          "local": "Local",
+          "friendly": "Amigable",
+          "dmy": "D/M/A"
+        }
+      },
+      "language": {
+        "title": "Idioma"
+      },
+      "deleteWorkspacePrompt": {
+        "title": "Eliminar espacio de trabajo",
+        "content": "¿Está seguro de que desea eliminar este espacio de trabajo? Esta acción no se puede deshacer y se anulará la publicación de todas las páginas que haya publicado."
+      },
+      "leaveWorkspacePrompt": {
+        "title": "Salir del espacio de trabajo",
+        "content": "¿Está seguro de que desea abandonar este espacio de trabajo? Perderá el acceso a todas las páginas y datos que contiene."
+      },
+      "manageWorkspace": {
+        "title": "Administrar el espacio de trabajo",
+        "leaveWorkspace": "Salir del espacio de trabajo",
+        "deleteWorkspace": "Eliminar espacio de trabajo"
+      }
+    },
+    "manageDataPage": {
+      "menuLabel": "Gestionar datos",
+      "title": "Gestionar datos",
+      "description": "Administre el almacenamiento local de datos o importe sus datos existentes en @:appName .",
+      "dataStorage": {
+        "title": "Ubicación de almacenamiento de archivos",
+        "tooltip": "La ubicación donde se almacenan sus archivos",
+        "actions": {
+          "change": "Cambiar ruta",
+          "open": "Abrir carpeta",
+          "openTooltip": "Abrir la ubicación de la carpeta de datos actual",
+          "copy": "Copiar ruta",
+          "copiedHint": "¡Ruta copiada!",
+          "resetTooltip": "Restablecer la ubicación predeterminada"
+        },
+        "resetDialog": {
+          "title": "¿Está seguro?",
+          "description": "Restablecer la ruta a la ubicación de datos predeterminada no eliminará los datos. Si desea volver a importar los datos actuales, primero debe copiar la ruta de su ubicación actual."
+        }
+      },
+      "importData": {
+        "title": "Importar datos",
+        "tooltip": "Importar datos desde las copias de seguridad o carpetas de datos de @:appName",
+        "action": "Explorar archivo"
+      },
+      "encryption": {
+        "title": "Encriptación",
+        "tooltip": "Gestione cómo se almacenan y cifran sus datos",
+        "descriptionNoEncryption": "Al activar el cifrado se cifrarán todos los datos. Esta acción no se puede deshacer.",
+        "descriptionEncrypted": "Sus datos están encriptados.",
+        "action": "Encriptar datos",
+        "dialog": {
+          "title": "¿Encriptar todos sus datos?",
+          "description": "Si encripta todos sus datos, los mantendrá seguros. Esta acción NO se puede deshacer. ¿Está seguro de que desea continuar?"
+        }
+      },
+      "cache": {
+        "title": "Limpiar caché",
+        "description": "Ayuda a resolver problemas como imágenes que no se cargan, páginas faltantes en un espacio y fuentes que no se cargan. Esto no afectará a tus datos.",
+        "dialog": {
+          "title": "Limpiar caché",
+          "description": "Ayuda a resolver problemas como imágenes que no se cargan, páginas faltantes en un espacio y fuentes que no se cargan. Esto no afectará a tus datos.",
+          "successHint": "¡Caché borrado!"
+        }
+      },
+      "data": {
+        "fixButton": "Arreglar",
+        "fixYourDataDescription": "Si tienes problemas con tus datos, puedes intentar solucionarlos aquí."
+      }
+    },
+    "shortcutsPage": {
+      "menuLabel": "Atajos",
+      "title": "Atajos",
+      "searchHint": "Buscar",
+      "actions": {
+        "resetDefault": "Restablecer valores predeterminados"
+      },
+      "errorPage": {
+        "howToFix": "Inténtalo nuevamente. Si el problema persiste, comunícate a través de GitHub."
+      },
+      "resetDialog": {
+        "buttonLabel": "Reiniciar"
+      },
+      "conflictDialog": {
+        "title": "{} está actualmente en uso",
+        "confirmLabel": "Continuar"
+      },
+      "keybindings": {
+        "toggleToDoList": "Cambiar a la lista de tareas",
+        "insertNewParagraphInCodeblock": "Insertar nuevo párrafo",
+        "pasteInCodeblock": "Pegar en bloque de código",
+        "selectAllCodeblock": "Seleccionar todo",
+        "indentLineCodeblock": "Insertar dos espacios al inicio de la línea",
+        "outdentLineCodeblock": "Eliminar dos espacios al inicio de la línea",
+        "twoSpacesCursorCodeblock": "Insertar dos espacios en el cursor",
+        "copy": "Copiar selección",
+        "cut": "Cortar selección",
+        "alignLeft": "Alinear el texto a la izquierda",
+        "alignCenter": "Alinear el texto al centro",
+        "alignRight": "Alinear el texto a la derecha",
+        "undo": "Deshacer",
+        "redo": "Rehacer",
+        "convertToParagraph": "Convertir bloque a párrafo",
+        "backspace": "Borrar",
+        "deleteLeftSentence": "Eliminar la oración de la izquierda",
+        "moveCursorBeginning": "Mover el cursor al principio",
+        "moveCursorLeftWord": "Mover el cursor una palabra a la izquierda",
+        "moveCursorBeginSelect": "Seleccionar y mover el cursor al principio",
+        "moveCursorEnd": "Mover el cursor hasta el final",
+        "moveCursorEndSelect": "Seleccionar y mover el cursor hasta el final",
+        "moveCursorUp": "Mover el cursor hacia arriba",
+        "moveCursorTopSelect": "Seleccionar y mover el cursor hacia la parte superior",
+        "moveCursorTop": "Mover el cursor a la parte superior",
+        "moveCursorUpSelect": "Seleccionar y mover el cursor hacia arriba",
+        "moveCursorBottomSelect": "Seleccionar y mover el cursor hacia la parte inferior",
+        "moveCursorBottom": "Mover el cursos a la parte inferior",
+        "moveCursorDown": "Mover el cursor hacia abajo",
+        "toggleBold": "Activar negrita",
+        "toggleItalic": "Activar cursiva",
+        "toggleUnderline": "Activar subrayado",
+        "indent": "Sangria ",
+        "pageUp": "Desplácese una página hacia arriba",
+        "pageDown": "Desplácese una página hacia abajo",
+        "selectAll": "Seleccionar todo",
+        "pasteWithoutFormatting": "Pegar contenido sin formato",
+        "showEmojiPicker": "Mostrar selector de emoji"
+      },
+      "commands": {
+        "codeBlockPasteText": "Pegar texto en bloque de código",
+        "textAlignLeft": "Alinear el texto a la izquierda",
+        "textAlignCenter": "Alinear el texto al centro",
+        "textAlignRight": "Alinear el texto a la derecha"
+      }
+    },
+    "aiPage": {
+      "title": "Configuración de IA",
+      "menuLabel": "Configuración de IA",
+      "keys": {
+        "enableAISearchTitle": "Búsqueda de IA",
+        "aiSettingsDescription": "Elige tu modelo preferido para potenciar AppFlowy AI. Ahora incluye GPT 4-o, Claude 3,5, Llama 3.1 y Mistral 7B",
+        "loginToEnableAIFeature": "Las funciones de IA solo se habilitan después de iniciar sesión con @:appName Cloud. Si no tienes una cuenta @:appName , ve a \"Mi cuenta\" para registrarte.",
+        "downloadLLMPrompt": "Descargar {}",
+        "downloadLLMPromptDetail": "La descarga del modelo local {} ocupará hasta {} de espacio de almacenamiento. ¿Quieres continuar?",
+        "downloadBigFilePrompt": "La descarga puede tardar unos 10 minutos en completarse.",
+        "downloadAIModelButton": "Descargar",
+        "downloadingModel": "Descargando",
+        "localAILoaded": "El modelo de IA local se agregó correctamente y está listo para usar",
+        "localAIStart": "El chat de IA local está comenzando...",
+        "localAILoading": "El modelo de chat de IA local se está cargando...",
+        "localAIStopped": "La IA local se detuvo",
+        "failToLoadLocalAI": "No se pudo iniciar la IA local",
+        "restartLocalAI": "Reiniciar la IA local",
+        "disableLocalAITitle": "Desactivar la IA local",
+        "disableLocalAIDescription": "¿Quieres desactivar la IA local?",
+        "localAIToggleTitle": "Activa o desactiva la IA local",
+        "openModelDirectory": "Abrir carpeta"
+      }
+    },
+    "planPage": {
+      "title": "Plan de precios",
+      "planUsage": {
+        "storageLabel": "Almacenamiento",
+        "storageUsage": "{} de {} GB",
+        "unlimitedStorageLabel": "Almacenamiento ilimitado",
+        "collaboratorsLabel": "Miembros",
+        "collaboratorsUsage": "{} de {}",
+        "aiResponseLabel": "Respuestas de IA",
+        "aiResponseUsage": "{} de {}",
+        "unlimitedAILabel": "Respuestas ilimitadas",
+        "proBadge": "Pro",
+        "memberProToggle": "Más miembros e IA ilimitada",
+        "aiMaxToggle": "IA ilimitada y acceso a modelos avanzados.",
+        "aiOnDeviceToggle": "Inteligencia artificial local para máxima privacidad",
+        "aiCredit": {
+          "title": "Añadir crédito de IA @:appName",
+          "price": "{}",
+          "priceDescription": "por 1.000 créditos"
+        },
+        "currentPlan": {
+          "bannerLabel": "Plan actual",
+          "freeTitle": "Gratis",
+          "proTitle": "Pro",
+          "teamTitle": "Equipo",
+          "freeInfo": "Perfecto para personas de hasta 2 miembros para organizar todo.",
+          "proInfo": "Perfecto para equipos pequeños y medianos de hasta 10 miembros.",
+          "teamInfo": "Perfecto para todos los equipos productivos y bien organizados.",
+          "upgrade": "Cambiar plan",
+          "canceledInfo": "Tu plan ha sido cancelado, pasarás al plan gratuito el {}."
+        },
+        "addons": {
+          "addLabel": "Agregar",
+          "activeLabel": "Agregado",
+          "aiMax": {
+            "price": "{}"
+          },
+          "aiOnDevice": {
+            "price": "{}",
+            "priceInfo": "Por usuario por mes facturado anualmente"
+          }
+        },
+        "deal": {
+          "bannerLabel": "¡Oferta de año nuevo!",
+          "title": "¡Haz crecer tu equipo!",
+          "viewPlans": "Ver planes"
+        }
+      }
+    },
+    "billingPage": {
+      "menuLabel": "Facturación",
+      "title": "Facturación",
+      "plan": {
+        "title": "Plan",
+        "freeLabel": "Gratis",
+        "proLabel": "Pro",
+        "planButtonLabel": "Cambiar plan",
+        "billingPeriod": "Periodo de facturación",
+        "periodButtonLabel": "Periodo de edición"
+      },
+      "paymentDetails": {
+        "title": "Detalles de pago",
+        "methodLabel": "Método de pago",
+        "methodButtonLabel": "Cambiar Método"
+      },
+      "addons": {
+        "addLabel": "Agregar",
+        "removeLabel": "Eliminar"
+      }
     },
     "menu": {
       "appearance": "Apariencia",
